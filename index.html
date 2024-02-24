@@ -1,0 +1,133 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="styleSheet" href="css/style.css">
+    <title>Book Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body dir="rtl">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg p-3 fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav fs-6">
+                    <li class="nav-item pe-4">
+                        <a class="nav-link" href="#">خانه</a>
+                    </li>
+                    <li class="nav-item pe-4">
+                        <a class="nav-link" href="#basket">سبد خرید</a>
+                    </li>
+                    <li class="nav-item pe-4">
+                        <a class="nav-link" href="#about">درباره ما</a>
+                    </li>
+                    <li class="nav-item dropdown pe-4">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">دسته بندی</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#novel">رمان</a></li>
+                            <li><a class="dropdown-item" href="#poetry">شعر</a></li>
+                            <li><a class="dropdown-item" href="#psychology">روانشناسی</a></li>
+                            <li><a class="dropdown-item" href="#scientific">علمی</a></li>
+                            <li><a class="dropdown-item" href="#children">کودکان</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section -->
+    <section class="container">
+        <div class="list-box mt-5 row g-4 justify-content-center" id="novel">
+            <h2 class="pt-5">رمان</h2>
+            <hr>
+            <!-- <div class="card list-item">
+                <img src="" class="card-img-top item-image" alt="Book Image">
+                <div class="card-body">
+                    <h5><a href="#" class="card-title"></a></h5>
+                    <p class="card-text item-detail"></p>
+                    <spsn class="item-price"></spsn>
+                    <button type="button" class="add-shop"><i class="fa fa-shopping-cart fa-2x"></i></button>
+                </div>
+            </div> -->
+        </div>
+        <div class="list-box mt-5 row g-4 justify-content-center" id="poetry">
+            <h2 class="pt-5">شعر</h2>
+            <hr>
+        </div>
+        <div class="list-box mt-5 row g-4 justify-content-center" id="psychology">
+            <h2 class="pt-5">روانشناسی</h2>
+            <hr>
+        </div>
+        <div class="list-box mt-5 row g-4 justify-content-center" id="scientific">
+            <h2 class="pt-5">علمی</h2>
+            <hr>
+        </div>
+        <div class="list-box mt-5 row g-4 justify-content-center" id="children">
+            <h2 class="pt-5">کودکان</h2>
+            <hr>
+        </div>
+    </section>
+
+    <!-- Basket -->
+    <div class="container mt-5" id="basket">
+        <h2 class="pt-5">سبد خرید<i class="fa fa-shopping-cart"></i></h2>
+        <hr>
+        <div class="basket-container position-relative w-100">
+            <!-- <div class="basket-item">
+            <img src="img/boofekoor.jpg" class="basket-item-img">
+            <div class="basket-details">
+                <span class="basket-item-title"></span>
+                <span class="basket-item-details"></span>
+                <span class="basket-item-price"></span>
+            </div>
+            <div class="quantity">
+                <input type="number" value="1" min="1" max="7" class="basket-quantity">
+                <button type="button" class="remove-item"><i class="fa fa-trash"></i></button>
+            </div>
+        </div> -->
+        </div>
+        <hr>
+        <h3 class="text-start">مبلغ کل : <span class="total-price">0</span></h3>
+    </div>
+
+    <!-- Footer -->
+    <footer id="about">
+        <div class="container-fluid mt-5 row text-center">
+            <div class="col about pt-3">
+                <h4>درباره ما</h4>
+                <p>شماره تماس : 09111111111</p>
+                <p>آدرس : رشت</p>
+            </div>
+            <div class="col icons text-center pt-3">
+                <h4>شبکه های اجتماعی</h4>
+                <a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.telegram.com" target="_blank"><i class="fa fa-telegram"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+            </div>
+            <div class="col link pt-3">
+                <h4>پیوندها</h4>
+                <a href="#novel">رمان</a><br>
+                <a href="#poetry">شعر</a><br>
+                <a href="#psychology">روانشناسی</a><br>
+                <a href="#scientific">علمی</a><br>
+                <a href="#children">کودکان</a><br>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
