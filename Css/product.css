@@ -6,11 +6,12 @@
 }
 
 header {
-    background-color: lightblue;
+    background: linear-gradient(135deg, #141e30, #324e6e);
 }
 
 .back-btn {
     background-color: transparent;
+    color: #eee;
 }
 
 .container {
@@ -29,5 +30,5 @@ img {
 }
 
 span {
-    background-color: lightblue;
+    background-color: #324e6e;
 }

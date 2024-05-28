@@ -207,7 +207,7 @@ function basketProductsGenetator (userBasketArray) {
     basketContainer.innerHTML = ''
     userBasketArray.forEach(function (product) {
         basketContainer.insertAdjacentHTML('beforeend', '<div class="basket-item d-flex p-3 mb-3"><img src="' 
-        + product.img + '" class="basket-item-img h-100"><div class="basket-details d-grid pe-3"><span class="basket-item-title">نام کتاب :'
+        + product.img + '" class="basket-item-img h-100"><div class="basket-details d-grid pe-3"><span class="basket-item-title">نام کتاب : '
         + product.title + '</span><span class="basket-item-details">نویسنده : ' +
         product.author + '</span><span class="basket-item-price">قیمت : ' + product.price + 
         ' تومان</span></div><div class="quantity pe-3"><input type="number" value="' + product.count + 

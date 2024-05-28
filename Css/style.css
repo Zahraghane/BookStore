@@ -7,7 +7,7 @@
 
 /* Navbar */
 nav {
-    background-color: lightblue;
+    background: linear-gradient(135deg, #141e30, #324e6e)
 }
 
 .nav-item {
@@ -15,7 +15,7 @@ nav {
 }
 
 li .dropdown-item:hover {
-    background-color: lightblue;
+    background-color: darkgray;
 }
 
 /* List Box */
@@ -40,7 +40,8 @@ li .dropdown-item:hover {
 /* Basket */
 .basket-item {
     height: 150px;
-    background-color: lightblue;
+    background: linear-gradient(135deg, #141e30, #324e6e);
+    color: #eee;
 }
 
 .remove-item {
@@ -52,5 +53,5 @@ li .dropdown-item:hover {
 
 /* Footer */
 footer {
-    background-color: lightblue;
+    background: linear-gradient(135deg, #141e30, #324e6e);
 }
