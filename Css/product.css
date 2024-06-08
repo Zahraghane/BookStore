@@ -12,6 +12,7 @@ header {
 .back-btn {
     background-color: transparent;
     color: #eee;
+    border: 1px solid darkgray;
 }
 
 .container {
@@ -31,4 +32,9 @@ img {
 
 span {
     background-color: #324e6e;
+}
+
+.details {
+    border: 2px solid darkgray;
+    padding: 10px;
 }

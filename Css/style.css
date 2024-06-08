@@ -7,18 +7,38 @@
 
 /* Navbar */
 nav {
-    background: linear-gradient(135deg, #141e30, #324e6e)
+    background: linear-gradient(135deg, #141e30, #324e6e);
 }
 
-.nav-item {
-    color: darkgray;
+nav div ul li .nav-link {
+    color: #eee;
+}
+
+nav div ul li .nav-link:hover {
+    color: #eee;
+    font-weight: bold;
+}
+
+ul .dropdown-menu {
+    background: darkgray;
+    color: #141e30;
 }
 
 li .dropdown-item:hover {
-    background-color: darkgray;
+    background: linear-gradient(135deg, #141e30, #324e6e);
+    color: #eee;
 }
 
 /* List Box */
+section div .card {
+    background: linear-gradient(135deg, #141e30, #324e6e);
+    color: #eee;
+}
+
+.card .add-shop {
+    color: #eee;
+}
+
 .card {
     width: 15rem;
     margin: 0 20px;
@@ -54,4 +74,10 @@ li .dropdown-item:hover {
 /* Footer */
 footer {
     background: linear-gradient(135deg, #141e30, #324e6e);
+    color: #eee;
+}
+
+footer div a {
+    color: #eee;
+    text-decoration: none;
 }

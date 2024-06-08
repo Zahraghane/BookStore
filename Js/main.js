@@ -67,7 +67,7 @@ let totalPrice = $.querySelector('.total-price')
 
 let userBasket = []
 
-novelCategory.forEach(function (product) {
+novelCategory.forEach((product) => {
     novelContainer.insertAdjacentHTML('beforeend', '<div class="card list-item col-lg-2 col-sm-3 col-4"><img src="' +
     product.img + '" class="card-img-top item-image" alt="Book Image"><div class="card-body"><h5><a href="product.html?id='
     + product.id + '" class="card-title">'
@@ -76,7 +76,7 @@ novelCategory.forEach(function (product) {
     product.id + ')"><i class="fa fa-cart-plus fa-2x"></i></button></div></div>')
 })
 
-poetryCategory.forEach(function (product) {
+poetryCategory.forEach((product) => {
     poetryContainer.insertAdjacentHTML('beforeend', '<div class="card list-item col-lg-2 col-sm-3 col-4"><img src="' +
     product.img + '" class="card-img-top item-image" alt="Book Image"><div class="card-body"><h5><a href="product.html?id='
     + product.id + '" class="card-title">'
@@ -85,7 +85,7 @@ poetryCategory.forEach(function (product) {
     product.id + ')"><i class="fa fa-cart-plus fa-2x"></i></button></div></div>')
 })
 
-psychologyCategory.forEach(function (product) {
+psychologyCategory.forEach((product) => {
     psychologyContainer.insertAdjacentHTML('beforeend', '<div class="card list-item col-lg-2 col-sm-3 col-4"><img src="' +
     product.img + '" class="card-img-top item-image" alt="Book Image"><div class="card-body"><h5><a href="product.html?id='
     + product.id + '" class="card-title">'
@@ -94,7 +94,7 @@ psychologyCategory.forEach(function (product) {
     product.id + ')"><i class="fa fa-cart-plus fa-2x"></i></button></div></div>')
 })
 
-scientificCategory.forEach(function (product) {
+scientificCategory.forEach((product) => {
     scientificContainer.insertAdjacentHTML('beforeend', '<div class="card list-item col-lg-2 col-sm-3 col-4"><img src="' +
     product.img + '" class="card-img-top item-image" alt="Book Image"><div class="card-body"><h5><a href="product.html?id='
     + product.id + '" class="card-title">'
@@ -103,7 +103,7 @@ scientificCategory.forEach(function (product) {
     product.id + ')"><i class="fa fa-cart-plus fa-2x"></i></button></div></div>')
 })
 
-childrenCategory.forEach(function (product) {
+childrenCategory.forEach((product) => {
     childrenContainer.insertAdjacentHTML('beforeend', '<div class="card list-item col-lg-2 col-sm-3 col-4"><img src="' +
     product.img + '" class="card-img-top item-image" alt="Book Image"><div class="card-body"><h5><a href="product.html?id='
     + product.id + '" class="card-title">'
@@ -205,7 +205,7 @@ function cAddToBasket (productId) {
 
 function basketProductsGenetator (userBasketArray) {
     basketContainer.innerHTML = ''
-    userBasketArray.forEach(function (product) {
+    userBasketArray.forEach((product) => {
         basketContainer.insertAdjacentHTML('beforeend', '<div class="basket-item d-flex p-3 mb-3"><img src="' 
         + product.img + '" class="basket-item-img h-100"><div class="basket-details d-grid pe-3"><span class="basket-item-title">نام کتاب : '
         + product.title + '</span><span class="basket-item-details">نویسنده : ' +
