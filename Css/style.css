@@ -46,6 +46,7 @@ section div .card {
 
 .item-image {
     height: 230px;
+    border: 2px solid darkgray;
 }
 
 .card-title {
@@ -80,4 +81,17 @@ footer {
 footer div a {
     color: #eee;
     text-decoration: none;
+}
+
+footer div a:hover {
+    color: darkgray;
+    transition: all 0.5s ease-out;
+}
+
+footer h4 {
+    margin-bottom: 15px;
+}
+
+footer .icons a{
+    padding: 5px;
 }
