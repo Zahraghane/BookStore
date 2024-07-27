@@ -205,16 +205,18 @@ function cAddToBasket (productId) {
 
 function basketProductsGenetator (userBasketArray) {
     basketContainer.innerHTML = ''
-    userBasketArray.forEach((product) => {
-        basketContainer.insertAdjacentHTML('beforeend', '<div class="basket-item d-flex p-3 mb-3"><img src="' 
-        + product.img + '" class="basket-item-img h-100"><div class="basket-details d-grid pe-3"><span class="basket-item-title">نام کتاب : '
-        + product.title + '</span><span class="basket-item-details">نویسنده : ' +
-        product.author + '</span><span class="basket-item-price">قیمت : ' + product.price + 
-        ' تومان</span></div><div class="quantity pe-3"><input type="number" value="' + product.count + 
-        '" min="1" max="7" class="basket-quantity text-center" onchange="updateProductCount(' + product.id + ',' + 'value' + 
-        ')"></div><button type="button" class="remove-item ps-4" onclick="removeProduct(' 
-        + product.id + ')"><i class="fa fa-remove position-absolute top-0 start-0 p-2"></i></button></div>')
-    })
+    userBasketArray.forEach(product => {
+        basketContainer.insertAdjacentHTML('beforeend', '<div class="basket-item d-flex p-3 mb-3 position-relative"><img src="'
+            + product.img + '"class="basket-item-img h-100"><div class="basket-details d-grid pe-3"><span class="basket-item-title">نام کتاب : '
+            + product.title + '</span><span class="basket-item-details">نویسنده : ' +
+            product.author + '</span><span class="basket-item-price">قیمت : ' + product.price +
+            ' تومان</span></div><div class="quantity pe-3"><input type="number" value="' + product.count +
+            '" min="1" max="7" class="basket-quantity text-center" onchange="updateProductCount(' + product.id + ',' + 'value' +
+            ')"></div><button type="button" class="remove-item ps-4" onclick="removeProduct('
+            + product.id + ')"><i class="fa fa-remove position-absolute top-0 start-0 p-2"></i></button></div>'
+        )
+    });
+
     calcTotalPrice(userBasket)
 }
 
