@@ -29,6 +29,44 @@ li .dropdown-item:hover {
     color: #eee;
 }
 
+/* Banner and sidebar */
+.first-section {
+    margin-top: 7rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sidebar {
+    width: 30%;
+    font-size: 20px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.banner {
+    
+}
+
+.banner-novel img {
+    position: relative;
+    border-radius: 15px;
+}
+
+.banner-novel button {
+    position: absolute;
+    top: 200px;
+    right: 10px;
+}
+
 /* List Box */
 section div .card {
     background: linear-gradient(135deg, #141e30, #324e6e);
@@ -100,6 +138,10 @@ footer .icons a {
 @media screen and (max-width: 900px) {
     * {
         font-size: 12px;
+    }
+
+    .sidebar {
+        display: none;
     }
 
     footer h4 {
