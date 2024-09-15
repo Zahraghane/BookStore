@@ -51,11 +51,6 @@ li .dropdown-item:hover {
     justify-content: space-between;
 }
 
-
-.banner {
-    
-}
-
 .banner-novel img {
     position: relative;
     border-radius: 15px;
@@ -132,6 +127,11 @@ footer h4 {
 
 footer .icons a {
     padding: 5px;
+}
+
+.last-part {
+    background-color: #141e30;
+    padding: 3px;
 }
 
 
